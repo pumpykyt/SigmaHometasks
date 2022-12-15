@@ -9,9 +9,9 @@ public class DairyProduct : Product
 {
     private uint _expirationDate;
 
-    public DairyProduct(string name, decimal price, Currency currency, 
+    public DairyProduct(string name, string brand, decimal price, Currency currency, 
                         double weight, WeightUnit weightUnit, uint expirationDate) 
-        : base(name, price, currency, weight, weightUnit) 
+        : base(name, brand, price, currency, weight, weightUnit) 
         => _expirationDate = expirationDate;
 
     public override void ChangePrice(decimal percents)

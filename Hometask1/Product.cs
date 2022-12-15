@@ -48,6 +48,21 @@ public class Product : IComparable, ICloneable
             Console.WriteLine("Name should not be null or empty!");
         }
     }
+    
+    private string _brand;
+    public string Brand
+    {
+        get => _brand;
+        set
+        {
+            if (!string.IsNullOrEmpty(value))
+            {
+                _brand = value;
+                return;
+            }
+            Console.WriteLine("Brand should not be null or empty!");
+        }
+    }
 
     public virtual void ChangePrice(decimal percents) 
         => Price = (Price.Value + Price.Value * 100 / percents, Price.Currency);
@@ -70,7 +85,7 @@ public class Product : IComparable, ICloneable
         => $"Name: {_name}\tprice: {_price.Value} {_price.Currency}\t" +
            $"weight: {_weight.Value} {_weight.WeightUnit}";
 
-    public object Clone() => new Product(_name, _price.Value, _price.Currency, _weight.Value, _weight.WeightUnit);
+    public object Clone() => new Product(_name, _brand, _price.Value, _price.Currency, _weight.Value, _weight.WeightUnit);
 
     public int CompareTo(object? obj) => _price.CompareTo(((Product)obj).Price);
 
@@ -80,12 +95,13 @@ public class Product : IComparable, ICloneable
 
     public override int GetHashCode() => HashCode.Combine(_name, _price, _weight);
 
-    public Product(string name, decimal price, Currency currency, double weight, WeightUnit weightUnit)
+    public Product(string name, string brand, decimal price, Currency currency, double weight, WeightUnit weightUnit)
     {
+        Brand = brand;
         Name = name;
         Price = (price, currency);
         Weight = (weight, weightUnit);
     }
-    
-    public Product() { }
+
+    public Product(){}
 }

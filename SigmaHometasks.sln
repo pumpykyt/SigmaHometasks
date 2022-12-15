@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hometask6", "Hometask6\Home
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hometask7", "Hometask7\Hometask7.csproj", "{91F1431D-C216-42BD-9378-647CFA0A9363}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hometask8", "Hometask8\Hometask8.csproj", "{CCF79BF9-A429-412F-AD5C-F74828D12E1A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{91F1431D-C216-42BD-9378-647CFA0A9363}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91F1431D-C216-42BD-9378-647CFA0A9363}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91F1431D-C216-42BD-9378-647CFA0A9363}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCF79BF9-A429-412F-AD5C-F74828D12E1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCF79BF9-A429-412F-AD5C-F74828D12E1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCF79BF9-A429-412F-AD5C-F74828D12E1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCF79BF9-A429-412F-AD5C-F74828D12E1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

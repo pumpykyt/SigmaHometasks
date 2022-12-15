@@ -4,10 +4,10 @@ using Hometask3.Classes;
 using Hometask4;
 
 var storage = new Storage(
-    new Product("Pepsi", 4, Currency.UAH, 300, WeightUnit.Gram), 
-    new Product("Fanta", 3, Currency.UAH, 250, WeightUnit.Gram), 
-    new Product("Coca-cola", 1, Currency.UAH, 500, WeightUnit.Gram), 
-    new Product("Schweppes", 2, Currency.UAH, 1000, WeightUnit.Gram));
+    new Product("Pepsi", "NashSvit", 4, Currency.UAH, 300, WeightUnit.Gram), 
+    new Product("Fanta", "NashSvit", 3, Currency.UAH, 250, WeightUnit.Gram), 
+    new Product("Coca-cola", "NashSvit", 1, Currency.UAH, 500, WeightUnit.Gram), 
+    new Product("Schweppes", "NashSvit", 2, Currency.UAH, 1000, WeightUnit.Gram));
 
 Console.WriteLine("\n\nStorage before sort:");
 storage.Output();

@@ -41,9 +41,9 @@ public class Meat : Product
     
     public Meat() { }
     
-    public Meat(string name, decimal price, Currency currency, 
+    public Meat(string name, string brand, decimal price, Currency currency, 
                 double weight, WeightUnit weightUnit, Category category, Type type) 
-        : base(name, price, currency, weight, weightUnit)
+        : base(name, brand, price, currency, weight, weightUnit)
     {
         Category = category;
         Type = type;

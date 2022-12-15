@@ -7,7 +7,7 @@ public class Storage
 {
     private List<Product> _products;
     public List<Product> Products => new List<Product>(_products);
-    
+
     public void Sort() => _products.Sort();
 
     public void Add(Product product) => _products.Add(product);

@@ -15,16 +15,16 @@ public class Problem1Solver : IProblemSolver
         
         var products = new List<Product>
         {
-            new("Milka", 20, Currency.UAH, 1000, WeightUnit.Gram),
-            new("Artek", 24, Currency.UAH, 500, WeightUnit.Gram),
-            new("Cola", 12, Currency.UAH, 1000, WeightUnit.Gram),
-            new("Pepsi", 15, Currency.UAH, 500, WeightUnit.Gram),
-            new("Lays", 15, Currency.UAH, 1000, WeightUnit.Gram),
-            new("Fanta", 16, Currency.UAH, 750, WeightUnit.Gram),
-            new("Pepsi", 12, Currency.UAH, 450, WeightUnit.Gram),
-            new("Milka", 20, Currency.UAH, 1000, WeightUnit.Gram),
-            new("Bonaqua", 51, Currency.UAH, 300, WeightUnit.Gram),
-            new("Pepsi", 15, Currency.UAH, 500, WeightUnit.Gram)
+            new("Milka", "NashSvit", 20, Currency.UAH, 1000, WeightUnit.Gram),
+            new("Artek", "NashSvit", 24, Currency.UAH, 500, WeightUnit.Gram),
+            new("Cola", "NashSvit", 12, Currency.UAH, 1000, WeightUnit.Gram),
+            new("Pepsi", "NashSvit", 15, Currency.UAH, 500, WeightUnit.Gram),
+            new("Lays", "NashSvit", 15, Currency.UAH, 1000, WeightUnit.Gram),
+            new("Fanta", "NashSvit", 16, Currency.UAH, 750, WeightUnit.Gram),
+            new("Pepsi", "NashSvit", 12, Currency.UAH, 450, WeightUnit.Gram),
+            new("Milka", "NashSvit", 20, Currency.UAH, 1000, WeightUnit.Gram),
+            new("Bonaqua", "NashSvit", 51, Currency.UAH, 300, WeightUnit.Gram),
+            new("Pepsi", "NashSvit", 15, Currency.UAH, 500, WeightUnit.Gram)
         };
         
         var storage1 = new Storage(products.Take(5).ToArray());
